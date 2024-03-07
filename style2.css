@@ -35,7 +35,7 @@ img{
 body{
     background: var(--container-color)
 }
-.header-2, .home-2, .chat-main-container, ..content-list .content-price-2{
+.header-2, .home-2, .chat-main-container, .content-list .content-price-2{
     display: none;
 }
 
@@ -772,7 +772,7 @@ input[type=search]{
         display: none;
     }
 
-    .header-2, .home-2, .chat-main-container, .content-price-2{
+    .header-2, .home-2, .chat-main-container{
         display: block;
     }
 
@@ -1134,11 +1134,11 @@ input[type=search]{
         background: #DA3743;
         margin: 5px;
     }
-    .food-content-2:hover {
+    .content-list:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         height: calc(100% + 10px);
     }
-    .food-content-2:hover .content-price-2 span {
+    .content-list:hover .content-price-2 span {
         display: block;
     }
 }
