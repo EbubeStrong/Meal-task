@@ -1115,7 +1115,7 @@ input[type=search]{
     }
 
     .search-inputting{
-        padding: 20px -5px 20px 5px;
+        padding: 5px;
         position: relative;
     }
 
@@ -1134,7 +1134,7 @@ input[type=search]{
         max-width: 300px;
         display: flex;
         background: #fff;
-        padding: 0;
+        padding: 10px;
     }
 
     .search-inputting .search-box input{
