@@ -1127,6 +1127,16 @@ input[type=search]{
         max-width: 400px;
     }
 
+    .search-inputting .search-box{
+        border: 1px solid var(--main-color);
+        border-radius: 5px;
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        background: #fff;
+        padding: 0;
+    }
+
     .search-inputting .search-box input{
         max-width: 500px;
         padding: 10px ;
