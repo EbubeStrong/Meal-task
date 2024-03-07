@@ -35,7 +35,7 @@ img{
 body{
     background: var(--container-color)
 }
-.header-2, .home-2, .chat-main-container, .content-price-2{
+.header-2, .home-2, .chat-main-container, ..content-list .content-price-2{
     display: none;
 }
 
@@ -768,7 +768,7 @@ input[type=search]{
     }
 }
 @media(max-width: 750px){
-    .header-1, .home-1, .content-price{
+    .header-1, .home-1, .content-list .content-price{
         display: none;
     }
 
