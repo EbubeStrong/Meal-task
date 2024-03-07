@@ -1114,7 +1114,6 @@ input[type=search]{
         font-style: normal;
         font-weight: 700;
         line-height: 160%;
-        display: none;
     }
     .content-list .content-price-2 span {
         width: 50px;
@@ -1135,13 +1134,23 @@ input[type=search]{
         background: #DA3743;
         margin: 5px;
     }
-    .content-list:hover {
+/*     .content-list:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         height: calc(100% + 10px);
     }
     .content-list:hover .content-price-2{
         display: block;
-    }
+    } */
+
+    .card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: calc(100% + 10px);
+    transition: 1.7s ease;
+}
+
+.card:hover span{
+    display: block;
+}
 }
 
 @media(max-width: 600px){
