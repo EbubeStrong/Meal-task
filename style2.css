@@ -1114,6 +1114,7 @@ input[type=search]{
         font-style: normal;
         font-weight: 700;
         line-height: 160%;
+        display: none;
     }
     .content-list .content-price-2 span {
         width: 50px;
