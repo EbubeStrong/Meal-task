@@ -1024,7 +1024,7 @@ input[type=search]{
 
     .search-inputting{
         /* border: 2px solid green; */
-        position: absolute;
+        position: relative;
         top: 30%;
         width: 100%;
         padding: 20px;
@@ -1057,7 +1057,7 @@ input[type=search]{
     }
 
     .home-2 .home-food-image{
-        position: absolute;
+        position: relative;
         top: 50%;
         left: 7%;
         border: 1.758px solid #dd4650;
@@ -1098,5 +1098,41 @@ input[type=search]{
         position: absolute;
         left: 22px;
         top: 25px;
+    }
+}
+
+@media(max-width: 650px){
+    .home-2 .home-text{
+        max-width: 1000px;
+    }
+
+    .home-2 .home-text  h2{
+        max-width: 850px;
+    }
+
+    .home-2 .home-text p{
+        max-width: 850px;
+    }
+
+    .search-inputting{
+        padding: 20px -5px 20px 20px;
+        position: relative;
+    }
+
+    .search-inputting p{
+        padding-left: 20px;
+    }
+
+    .search-inputting .search-box{
+        max-width: 400px;
+    }
+
+    .search-inputting .search-box input{
+        max-width: 500px;
+        padding: 10px ;
+    }
+
+    .home-2 .home-food-image{
+        left: 1%;
     }
 }
