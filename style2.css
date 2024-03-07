@@ -1117,10 +1117,11 @@ input[type=search]{
     .search-inputting{
         padding: 5px;
         position: relative;
+        margin-top: 20%;
     }
 
     .search-inputting p{
-        padding-left: 5px;
+        padding-left: 15px;
     }
 
     .search-inputting .search-box{
