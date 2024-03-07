@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="testimonial.css">
+    
+    <link rel="stylesheet" href="news-report.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="imageSlider.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="header-1">
+        <div class="nav container">
+                 <!-- Logo -->
+                <div class="logo">
+                    <img src="img/logo.svg" alt="">
+                    <h1>Meals</h1>
+                </div>
+    
+                <!-- Nav Links -->
+                <nav class="navBar">
+                    <a href="#" class="nav-link nav-active">Home</a>
+                    <a href="#menu" class="nav-link">Menu</a>
+                    <a href="#tranding" class="nav-link">MealPlan</a>
+                </nav>
+
+                <!-- Search Box -->
+                <div class="search-box">
+                   <input type="search" name="" id="search-input search" placeholder="Search your favorite dish">
+                   <i class="bx bx-search" id="searching"></i>
+                </div>
+   
+                <div class="cart">
+                   <img src="img/cart.svg" alt="" class="cart-image">
+                </div>
+   
+                <div class="sign-in">
+                   <a href="">SignIn</a>
+                </div>
+   
+                <div class="button">
+                   <button>Create Button</button>
+                </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Start of small screen Header -->
+    <div class="small_screen header-2">
+        <div class="heading">
+            <div class="logo">
+                <img src="./img/logo.svg" alt="photo">
+                <h1>Meals</h1>
+            </div>
+
+            <div class="icons">
+                <img src="./img/cart.svg" alt="photo" class="img_1">
+                <img src="./img/menu.svg" alt="photo" class="img_2" onclick="openNav()">
+            </div>
+        </div>
+
+        <div class="sideBar" id="sidebar">
+            <div class="sideBar-main-container">
+                <div class="sideBar-container">
+                    <div class="icon">
+                        <img src="./img/Close.svg" alt="photo" onclick="closeNav()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn">
+                <button class="btn_1">Create Account</button>
+                <button class="btn_2">SignIn</button>
+            </div>
+
+            <div class="nav-main-container">
+                <div class="nav-container">
+                    <a href="#"><img src="./img/House.svg" alt="photo">
+                        <span>Home</span></a>
+                </div>
+
+                <div class="nav-container">
+                    <a href="#menu-2"><img src="./img/shop.svg" alt="photo">
+                        <span>Menu</span></a>
+                </div>
+
+                <div class="nav-container">
+                    <a href=""><img src="./img/cart.svg" alt="photo">
+                        <span>My Tray</span></a>
+                </div>
+
+                <div class="nav-container">
+                    <a href=""><img src="./img/clipboard.svg" alt="photo">
+                        <span>Meal Plans</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start of Home Section -->
+    <section class="home-1 container-1" id="home">
+
+        <!-- Home Text -->
+        <div class="home-text">
+            <h2>Delicious meals at <span>your convenience</span></h2>
+            <p>Order your meals from us and we will have it <span>delivered to you at your doorstep</span></p>
+            <div class="hero-btn">
+                <button>Get Started</button>
+            </div>
+       </div>
+
+       
+            <div class="home-food-image">
+                <div class="food-image">
+                    <img src="./img/image 5.png" alt="photo" class="home-img">
+                </div>
+            </div>
+      
+        <div class="chat-message">
+            <a href=""><i class="bx bx-message-dots"></i></a>
+        </div>
+    </section> 
+   <!-- End of Home Section -->
+
+   <!-- Start for hero-2 small-screen -->
+   <section class="small_screen-1 home-2">
+    <!-- <div class="home-container"> -->
+         <!-- Home Text -->
+        <div class="home-text">
+            <h2>Delicious meals at <span>your convenience</span></h2>
+            <p>Order your meals from us and we will have it <span>delivered to you at your doorstep</span></p>
+        </div>
+        <div class="search-inputting">
+            <p>Instant Order</p>
+            <div class="search-box">
+                <i class="bx bx-search" id="searched"></i>
+                <input type="text" name="" id="search-in search" placeholder="Search for meal">
+                
+             </div>
+        </div>
+        <div class="vector"><img src="./img/Vector 1306.svg" alt=""></div>
+        
+        <!-- </div> -->
+
+    <div class="home-food-image">
+        <div class="food-image">
+            <img src="./img/image 5.png" alt="photo" class="home-img">
+        </div>
+    </div>
+   </section>
+
+   <section class="chat-main-container">
+    <div class="chat-container">
+        <img src="./img/circle.svg" alt="photo" class="img-circle">
+        <img src="./img/chat.svg" alt="photo" class="img-chat">
+    </div>
+</section>
+
+<section class="menu-section">
+    <div class="menu-container">
+        <div class="menu-header">Menu</div>
+
+        <div class="filter_buttons">
+            <div class="menu-text">Current Menu</div>
+
+           <div class="menu-button">
+            <button class="active" data-name="all">All</button>
+            <button data-name="rice">Rice</button>
+            <button data-name="beans">Beans</button>
+            <button data-name="fries">Fries</button>
+            <button data-name="swallow">Swallow</button>
+            <button data-name="others">Others</button>
+           </div>
+        </div>
+
+        <!-- Images Cards -->
+        <div class="filterable_cards container-1">
+            <div class="card" data-name="rice">
+                <img src="./img/photo1.png" alt="">
+
+                <div class="content-list">
+                    <h3>Jellof Rice and Chicken</h3>
+                    <p>Fried potato/yam chips with egg sauce or any <span>topping of your choice</span></p>
+                    <div class="content-price">
+                        <h4>N 1,500</h4>
+                        <button class="btn"><p>Place Order</p></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-name="swallow">
+                <img src="./img/photo2.png" alt="">
+
+                <div class="content-list">
+                    <h3>Swallow with Draw Soup</h3>
+                    <p>Fried potato/yam chips with egg sauce or any <span>topping of your choice</span></p>
+                    <div class="content-price second-row">
+                        <h4>N 1000</h4>
+                        <button class="btn order"><p>Place Order</p></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-name="fries">
+                <img src="./img/photo3.png" alt="">
+
+                <div class="content-list">
+                    <h3>Fries with Egg Sauce</h3>
+                    <p>Fried potato/yam chips with egg sauce or any <span>topping of your choice</span></p>
+                    <div class="content-price third-row">
+                        <h4>N 1,500</h4>
+                        <button class="btn"><p>Place Order</p></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-name="swallow">
+                <img src="./img/photo4.png" alt="">
+
+                <div class="content-list">
+                    <h3>Swallow with Egusi Soup</h3>
+                    <p>Nicely cooked egusi soup and eba</p>
+                    <div class="content-price">
+                        <h4>N 1000</h4>
+                        <button class="btn"><p>Place Order</p></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-name="beans">
+                <img src="./img/photo5.png" alt="">
+
+                <div class="content-list">
+                    <h3>Beans</h3>
+                    <p>Fried potato/yam chips with egg sauce or any <span>topping of your choice</span></p>
+                    <div class="content-price">
+                        <h4>N 700</h4>
+                        <button class="btn"><p>Place Order</p></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-name="others">
+                <img src="./img/photo6.png" alt="">
+
+                <div class="content-list">
+                    <h3>Fried Rice</h3>
+                    <p>Fried potato/yam chips with egg sauce or any <span>topping of your choice</span></p>
+                    <div class="content-price">
+                        <h4>N 1,500</h4>
+                        <button class="btn"><p>Place Order</p></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-btn filter_button">
+            <button><p>Full Menu</p></button>
+        </div>
+        
+    </div>
+   
+
+    
+</section>
+   
+
+
+   <!-- End of Menu Section -->
+
+   <!-- Start Of Testimonial Report -->
+   <section class="testimonial-container">
+        <div class="testimonial-text">
+            <h2>What our <span>customers say</span> <span>about us</span></h2>
+            <p>At vero eos et accusamus et iusto odio <span>dignissimos ducimus qui blanditiis</span> <span>praesentium voluptatum.</span></p>
+        </div>
+
+    <div class="contents-wrapper">
+        <!-- <div class="header">
+            <h1>Testimonial</h1>
+        </div> -->
+        <div class="icon"><img src="./img/Icon.svg" alt="photo"></div>
+
+        <div class="testRow">
+            <div class="testItem active">
+                <div class="testimonial-image">
+                    <img src="./img/Image.png" alt="">
+                    <h3>Jan Doe</h3>
+                    <h4>San Francisco, USA</h4>
+                </div>
+                <div class="texti-text">
+                    <p>White dwarf a still more glorious dawn <span>awaits tingling of the spine emerged into</span> <span>consciousness Vangelis shores of the</span> <span>cosmic ocean. Tendrils of gossamer clouds</span> <span>kindling the energy hidden in matter</span>                                <span>concept of the number one permanence.</span></p>
+                </div>
+            </div>
+
+            <div class="testItem">
+                <div class="testimonial-image">
+                    <img src="./img/man.png" alt="">
+                    <h3>Jan Doe</h3>
+                    <h4>San Francisco, USA</h4>
+                </div>
+                <div class="texti-text">
+                    <p>White dwarf a still more glorious dawn awaits tingling of the spine emerged into consciousness Vangelis shores of the cosmic ocean. Tendrils of gossamer clouds kindling the energy hidden in matter concept of the number one permanence.</p>
+                </div>
+            </div>
+
+            <div class="testItem">
+                <div class="testimonial-image">
+                    <img src="./img/cast6.jpg" alt="">
+                    <h3>Jan Doe</h3>
+                    <h4>San Francisco, USA</h4>
+                </div>
+                <div class="texti-text">
+                    <p>White dwarf a still more glorious dawn <span>awaits tingling of the spine emerged into</span> <span>consciousness Vangelis shores of the</span> <span>cosmic ocean. Tendrils of gossamer clouds</span> <span>kindling the energy hidden in matter</span>                                <span>concept of the number one permanence.</span></p>
+                </div>
+            </div>
+
+            <div class="testItem">
+                <div class="testimonial-image">
+                    <img src="./img/user.jpg" alt="">
+                    <h3>Jan Doe</h3>
+                    <h4>San Francisco, USA</h4>
+                </div>
+                <div class="texti-text">
+                    <p>White dwarf a still more glorious dawn <span>awaits tingling of the spine emerged into</span> <span>consciousness Vangelis shores of the</span> <span>cosmic ocean. Tendrils of gossamer clouds</span> <span>kindling the energy hidden in matter</span>                                <span>concept of the number one permanence.</span></p>
+                </div>
+            </div>
+
+            <div class="testItem">
+                <div class="testimonial-image">
+                    <img src="./img/cast2.jpg" alt="">
+                    <h3>Jan Doe</h3>
+                    <h4>San Francisco, USA</h4>
+                </div>
+                <div class="texti-text">
+                    <p>White dwarf a still more glorious dawn <span>awaits tingling of the spine emerged into</span> <span>consciousness Vangelis shores of the</span> <span>cosmic ocean. Tendrils of gossamer clouds</span> <span>kindling the energy hidden in matter</span>                                <span>concept of the number one permanence.</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="indicators">
+            <div class="dot active" attr="0" onclick="switchTest(this)"></div>
+            <div class="dot" attr="1" onclick="switchTest(this)"></div>
+            <div class="dot" attr="2" onclick="switchTest(this)"></div>
+            <div class="dot" attr="3" onclick="switchTest(this)"></div>
+            <div class="dot" attr="4" onclick="switchTest(this)"></div>
+        </div>
+    </div>
+   </section>
+
+
+<section class="newsReport-main-container">
+    <div class="newsReport-container">
+        <div class="news-text">
+            <h2>Blog our latest News</h2>
+            <p>Have you ever browsed food blogs like mine and wondered <span>how to start a food blog of your very own?</span></p>
+        </div>
+        <div class="news-MainContainer">
+            <div class="news-container">
+                <div class="news-image"><img src="./img/Rectangle 1.png" alt="photo" loading="lazy" style="margin: 0 35px 0 0;"></div>
+                <div class="newsText">
+                    <h3>Design <span>01 October 2019</span></h3>
+                    <h4>Better Than Takeout Kung Pao Chicken</h4>
+                    <p>This spicy, tangy, and sweet better than takeout no peanut kung pao chicken stir fry recipe </p>
+                </div>
+            </div>
+            <div class="news-container">
+                <div class="news-image"><img src="./img/Rectangle 2.png" alt="photo" loading="lazy"></div>
+                <div class="newsText">
+                    <h3>Design <span>01 October 2019</span></h3>
+                    <h4>Better Than Takeout Kung Pao Chicken</h4>
+                    <p>This spicy, tangy, and sweet better than takeout no peanut kung pao chicken stir fry recipe </p>
+                </div>
+            </div>
+            <div class="news-container">
+                <div class="news-image"><img src="./img/Rectangle 3.png" alt="photo"></div>
+                <div class="newsText">
+                    <h3>Design <span>01 October 2019</span></h3>
+                    <h4>Better Than Takeout Kung Pao Chicken</h4>
+                    <p>This spicy, tangy, and sweet better than takeout no peanut kung pao chicken stir fry recipe </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Start of Image Gallery -->
+ <section id="tranding">
+    <div class="tranding-container">
+        <h3 class="text-center section-subheading">- popular Delivery - </h3>
+        <h1 class="text-cent section-heading">Trending food</h1>
+    </div>
+
+    <div class="tranding-container">
+        <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+                <!-- Slide Start -->
+                <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                        <img src="./img/photo1.png" alt="Trending">
+                    </div>
+                    <div class="tranding-slide-content">
+                        <h1 class="food-price">$20</h1>
+
+                        <div class="tranding-slide-content-bottom">
+                            <h2 class="food-name">Special Pizza</h2>
+                            <h3 class="food-rating">
+                                <span>4.5</span>
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider End -->
+
+                <!-- Slide Start -->
+                <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                        <img src="./img/photo2.png" alt="Trending">
+                    </div>
+                    <div class="tranding-slide-content">
+                        <h1 class="food-price">$20</h1>
+
+                        <div class="tranding-slide-content-bottom">
+                            <h2 class="food-name">Special Pizza</h2>
+                            <h3 class="food-rating">
+                                <span>4.5</span>
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider End -->
+
+                <!-- Slide Start -->
+                <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                        <img src="./img/photo3.png" alt="Trending">
+                    </div>
+                    <div class="tranding-slide-content">
+                        <h1 class="food-price">$20</h1>
+
+                        <div class="tranding-slide-content-bottom">
+                            <h2 class="food-name">Special Pizza</h2>
+                            <h3 class="food-rating">
+                                <span>4.5</span>
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider End -->
+
+                <!-- Slide Start -->
+                <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                        <img src="./img/photo4.png" alt="Trending">
+                    </div>
+                    <div class="tranding-slide-content">
+                        <h1 class="food-price">$20</h1>
+
+                        <div class="tranding-slide-content-bottom">
+                            <h2 class="food-name">Special Pizza</h2>
+                            <h3 class="food-rating">
+                                <span>4.5</span>
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider End -->
+
+                <!-- Slide Start -->
+                <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                        <img src="./img/photo5.png" alt="Trending">
+                    </div>
+                    <div class="tranding-slide-content">
+                        <h1 class="food-price">$20</h1>
+
+                        <div class="tranding-slide-content-bottom">
+                            <h2 class="food-name">Special Pizza</h2>
+                            <h3 class="food-rating">
+                                <span>4.5</span>
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider End -->
+
+                <!-- Slide Start -->
+                <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                        <img src="./img/photo6.png" alt="Trending">
+                    </div>
+                    <div class="tranding-slide-content">
+                        <h1 class="food-price">$20</h1>
+
+                        <div class="tranding-slide-content-bottom">
+                            <h2 class="food-name">Special Food</h2>
+                            <h3 class="food-rating">
+                                <span>4.5</span>
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider End -->
+                
+                <!-- Slide Start -->
+                <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                        <img src="./img/Rectangle 3.png" alt="Trending">
+                    </div>
+                    <div class="tranding-slide-content">
+                        <h1 class="food-price">$20</h1>
+
+                        <div class="tranding-slide-content-bottom">
+                            <h2 class="food-name">Special Pizza</h2>
+                            <h3 class="food-rating">
+                                <span>4.5</span>
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider End -->
+                
+            </div>
+
+            <div class="tranding-slider-control">
+                <div class="swiper-button-prev slider-arrow">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                </div>
+
+                <div class="swiper-button-next slider-arrow">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Image Gallery -->
+
+<footer>
+    <div class="menu-container footer-container">
+        <div class="logo-text">
+            <img src="./img/logo.svg" alt="photo">
+            <h2>Meals</h2>
+        </div>
+        <div class="nav-links">
+            <div class="nav">
+                <h4>Company</h4>
+                <a href="">Blog</a>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+            </div>
+    
+            <div class="nav service">
+                <h4>Service</h4>
+                <a href="">FAQs</a>
+                <a href="">Our Menu</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="line line-1"></div>
+   
+    
+    <div class="menu-container footer-container media">
+        <p>&copy;2022Meals. All rights reserved.</p>
+
+        <div class="line line-2"></div>
+
+        <div class="media-links">
+            <img src="./img/facebook.svg" alt="photo">
+
+            <span class="circle-bg">
+            <img src="./img/instagram.svg" alt="photo">
+            <img src="./img/instagram-alt.svg" alt="photo" class="instagram-media">
+        </span>
+
+            <img src="./img/twitter.svg" alt="photo" class="twitter-media">
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="script.js"></script>
+    <script 
+type="module"
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script 
+nomodule
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script 
+src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+></script>
+
+<script src="imageSlider.js"></script>
+</body>
+</html>

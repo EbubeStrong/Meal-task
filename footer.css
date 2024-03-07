@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins&display=swap');
+footer {
+    background: #FAFAFA;
+    flex-shrink: 0;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.footer-container{
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.media{
+    margin-bottom: 30px;
+}
+
+.footer-container .logo-text{
+    display: inline-flex;
+    padding: 0px 48.985px 3.811px 11.164px;
+    align-items: center;
+    gap: 13.475px;
+}
+
+.logo-text img {
+    width: 87.565px;
+    height: 48.378px;
+}
+
+.logo-text h2 {
+    color: #1A1A1A;
+    font-family: Inter;
+    font-size: 35.925px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 160%;
+    letter-spacing: 0.144px;
+}
+
+.footer-container .nav-links {
+    display: flex;
+    gap: 80px;
+    margin-top: 4rem;
+}
+
+.footer-container .nav-links .nav {
+    display: flex;
+    width: 168px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.footer-container .nav-links .service{
+    justify-content: flex-start;
+}
+
+.footer-container .nav-links .nav a {
+    color: #776a6a;
+    gap: 18px;
+}
+
+.footer-container .nav-links .nav h4 {
+    color: var(--Brainstorming-Black-Tints-900, #1A1A1A);
+    font-family: "Lato", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; 
+}
+.line{
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    max-width: 1250px;
+    margin: 10px auto
+}
+
+.media{
+    display:block;
+    position: relative;
+    width: 100%;
+}
+
+.media .media-links{
+    position: absolute;
+    /* border: 2px solid blue; */
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.media-links img{
+    width: 50px;
+}
+
+.circle-bg{
+    position: relative;
+}
+
+.media-links .instagram-media{
+    width: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.line-2{
+    display:none;
+}
+
+@media(max-width: 650px){
+    footer {
+        height: 95vh;
+    }
+    .footer-container{
+       flex-direction: column;
+       align-items: flex-start;
+       padding-left: 60px;
+    }
+
+    .line-1{
+        display: none;
+    }
+
+    .line-2{
+        display: block;
+        margin-top: 30px ;
+    }
+
+    .media .media-links{
+        position: relative;
+        margin-top: 30px;
+    }
+}

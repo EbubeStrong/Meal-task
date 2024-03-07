@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+}
+
+:root{
+    --fill-black-100: #363A40;
+    --Fill-Dark-Blue: #677580;
+}
+
+/* Start of Testimonial Reports */
+.testimonial-container{
+    /* position: relative; */
+    display: flex;
+    /* flex-basis: 500px; */
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(218, 55, 67, 0.15);
+    align-items: center;
+}
+
+.testimonial-text{
+    display: flex;
+    flex-direction: column;
+    height: 390px;
+    /* max-width: 23rem; */
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+
+.testimonial-text h2{
+    width: 100%;
+    max-width: 500px;
+    color: var(--fill-black-100);
+    font-family: "Lato";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 124%;
+    padding-left: 15rem;
+}
+
+.testimonial-text p{
+    width: 100%;
+    max-width: 450px;
+    color: var(--Fill-Dark-Blue);
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.064px;
+    padding-left: 15rem;
+}
+
+.testimonial-container .contents-wrapper{
+    position: relative;
+    width: 100%;
+    max-width: 665px;
+    /* min-height: inherit; */
+    min-height: 0;
+    /* margin: 30px auto; */
+    /* height: 20rem;
+    width: 40rem; */
+    height: 100%;
+    text-align: center;
+    margin-right: 5rem;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+    /* border: 3px solid black; */
+}
+
+.contents-wrapper .icon{
+    margin: 20px 20px 0 20px;
+    float: right;
+}
+
+.contents-wrapper .icon img{
+    width: 35px;
+}
+
+.contents-wrapper .testRow{
+    width: 100%;
+    height: 100%;
+    /* max-height: 100vh; */
+    /* min-height: inherit; */
+    min-height: 60vh;
+    /* height: fit-content; */
+    position: relative;
+    overflow: hidden;
+    /* top: 10%; */
+    /* border: 2px solid green; */
+}
+
+.testRow .testItem{
+    width: 100%;
+    height: 100%;
+    /* top: 20%; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 60px 50px 100px 50px; */
+    gap: 40px;
+    /* flex-direction: column; */
+    /* border: 2px solid rgb(255, 51, 0); */
+}
+
+.testRow .testItem:not(.active){
+    top: 0;
+    left: -100%;
+}
+
+.testimonial-image{
+    display: flex;
+    flex-direction: column;
+    /* gap: -5px; */
+    padding-left: 30px;
+}
+
+.testRow .testItem img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    /* outline: 2px solid #006994; */
+    outline-offset: 1px;
+}
+
+.testRow .testItem h3{
+    /* font-size: 50px; */
+    font-style: italic;
+    /* padding: 7px; */
+}
+
+.testRow .testItem h4{
+    font-style: italic;
+}
+
+.testRow .testItem .texti-text{
+    /* padding-right: 20px; */
+    /* display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%; */
+    /* max-height: 300px; */
+    /* border: 2px solid orange; */
+    padding-right: 30px;
+    width: 100%;
+    /* overflow:visible; */
+    /* max-width: 341px; */
+}
+
+.testRow .testItem .texti-text p{
+    
+    color: var(--Fill-Dark-Blue, #67758D);
+    font-family: "Lato";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* line-height: 120%;
+   
+    letter-spacing: 0.072px; */
+    
+    /* white-space: nowrap; */
+    /* line-height: 1.2; */
+    /* text-align: center; */
+    /* padding: 10px; */
+    /* margin: 20px auto 70px auto; */
+    /* border: 2px solid red; */
+    /* max-width: 1050px; */
+}
+
+.contents-wrapper .indicators{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    /* left: 77%;
+    transform: translateX(-50%); */
+    padding: 5px;
+    cursor: pointer;
+    /* border: 2px solid blue; */
+    /* width: 100%; */
+    /* max-width: 150px; */
+    white-space: nowrap;
+}
+
+.contents-wrapper .indicators .dot{
+    white-space: nowrap;
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+    border: 3px solid #aaa;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.contents-wrapper .indicators .active{
+    background-color: #006994;
+}
+
+@keyframes next1{
+    from{
+        left: 0%;
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes next2{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+@keyframes prev1{
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
+@keyframes prev2{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+@media(max-width: 1100px){
+    .testimonial-text p, .testimonial-text h2{
+        padding-left: 5rem;
+    }
+
+    .testRow .testItem .texti-text p{
+        font-size: 13px;
+    }
+}
+@media(max-width: 950px){
+    .testRow .testItem .texti-text{
+        /* font-size: 13px; */
+        width: 100%;
+        max-width: 700px;
+    }
+    .testRow .testItem img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media(max-width: 750px){
+    .testimonial-container{
+        flex-direction: column;
+    }
+    
+    .testRow .testItem img{
+        width: 120px;
+        height: 120px;
+    }
+    .testRow .testItem .texti-text{
+        padding-right: 30px;
+        width: 100%;
+    }
+    .testRow .testItem .texti-text p{
+        font-size: 19px;
+    }
+    .testimonial-container .contents-wrapper{
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 600px){
+    .testRow .testItem .texti-text p{
+        font-size: 13px;
+    }
+}
