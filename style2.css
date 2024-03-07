@@ -35,7 +35,7 @@ img{
 body{
     background: var(--container-color)
 }
-.header-2, .home-2, .chat-main-container{
+.header-2, .home-2, .chat-main-container, .content-price-2{
     display: none;
 }
 
@@ -772,7 +772,7 @@ input[type=search]{
         display: none;
     }
 
-    .header-2, .home-2, .chat-main-container{
+    .header-2, .home-2, .chat-main-container, .content-price-2{
         display: block;
     }
 
